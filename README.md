@@ -51,3 +51,5 @@ The application follows a logical flow:
 - Rabindra Giri
 - Saleep Shrestha
 - Saqib Mahmood
+- Himanshu Shah
+- Arinze Chiekwu
