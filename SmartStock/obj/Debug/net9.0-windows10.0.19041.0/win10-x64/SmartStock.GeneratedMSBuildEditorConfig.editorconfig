@@ -40,6 +40,36 @@ build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[c:/Users/yelis/github/Smart-Stock/SmartStock/Project/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Project.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Project\Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Project\Views\DashboardPage.xaml
+
+[c:/Users/yelis/github/Smart-Stock/SmartStock/Project/Views/InventoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Project.Views.InventoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Project\Views\InventoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Project\Views\InventoryPage.xaml
+
+[c:/Users/yelis/github/Smart-Stock/SmartStock/Project/Views/InvoicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Project.Views.InvoicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Project\Views\InvoicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Project\Views\InvoicePage.xaml
+
+[c:/Users/yelis/github/Smart-Stock/SmartStock/Project/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Project.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Project\Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Project\Views\LoginPage.xaml
+
+[c:/Users/yelis/github/Smart-Stock/SmartStock/Project/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Project.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Project\Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Project\Views\RegisterPage.xaml
+
 [c:/Users/yelis/github/Smart-Stock/SmartStock/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SmartStock.Resources.Styles.Colors.xaml
