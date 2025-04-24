@@ -1,6 +1,4 @@
-using Microsoft.Graphics.Canvas.Geometry;
-
-namespace SmartStock.Views;
+namespace SmartStock.Project.Views;
 
 public partial class DashBoardPage : ContentPage
 {

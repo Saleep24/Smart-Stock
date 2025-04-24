@@ -1,4 +1,4 @@
-﻿using SmartStock.Views;
+﻿using SmartStock.Project.Views;
 
 namespace SmartStock
 {

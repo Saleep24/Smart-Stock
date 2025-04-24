@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartStock.Views.ForgotPasswordPage"
+             x:Class="SmartStock.Project.Views.LoginPage"
              BackgroundColor="#ffffff">
-    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
@@ -31,28 +30,51 @@
     <VerticalStackLayout VerticalOptions="Center">
 
         <Label HorizontalOptions="Center" Margin="0, 20" FontSize="25" FontAttributes="Bold">
-            Forgot Password
+            Login
         </Label>
 
-        <Grid RowDefinitions="*" ColumnDefinitions="*,300,*" RowSpacing="10">
-            <Label Grid.Row="0" Grid.Column="0">Email:</Label>
+        <Grid RowDefinitions="*,*" ColumnDefinitions="*,300,*" RowSpacing="10">
+            <Label Grid.Row="0" Grid.Column="0">Username:</Label>
             <Border Grid.Row="0" Grid.Column="1">
-                <Entry Placeholder="eg : zzz@gmail.com"/>
+                <Entry Placeholder="eg : companyusername"/>
             </Border>
+
+            <Label Grid.Row="1" Grid.Column="0">Password:</Label>
+            <Border Grid.Row="1" Grid.Column="1">
+                <Entry Placeholder="eg : *********"/>
+            </Border>
+
+
         </Grid>
 
-        <Button Text="Reset Password"
-                HorizontalOptions="Center"
-                Margin="20"
-                BackgroundColor="Silver"
-                BorderColor="Black"
-                BorderWidth="2"/>
+        <Label TextDecorations="Underline"
+               Text="Forgot Password?"
+               HorizontalOptions="Center"
+               Margin="0, 10"
+               x:Name="ForgotPasswordbtn">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Button Text="Login"
+            x:Name="LoginButton"
+            BackgroundColor="#007AFF"
+            TextColor="White"
+            FontAttributes="Bold"
+            CornerRadius="8"
+            WidthRequest="300"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Clicked="LoginButton_Clicked" />
+
+
 
         <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 20">
-            <Label Margin="0, 0, 3, 0">Remember your password?</Label>
+            <Label Margin="0,0,3,0">Don't have a account?</Label>
             <Label TextDecorations="Underline"
-                   Text="Login"
-                   x:Name="LoginPagebtn">
+                   Text="Register"
+                   x:Name="Resgiterbtn">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartStock.Views.ProductsPage"
-             BackgroundColor="#ffffff">
+             x:Class="SmartStock.Project.Views.DashBoardPage"
+             BackgroundColor="White"
+             >
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
@@ -48,10 +49,19 @@
                 HeightRequest="2"
                 HorizontalOptions="Fill"/>
 
-            <Button Text="Dashboard" Style="{StaticResource PageButton}"/>
-            <Button Text="Products" Style="{StaticResource PageButton}" />
+            <Button Text="Dashboard"
+                    Style="{StaticResource PageButton}"
+                    x:Name="DashBoardbtn"
+                    Clicked="DashBoardbtn_Clicked"/>
+            <Button Text="Products"
+                    Style="{StaticResource PageButton}"
+                    x:Name="Productstbtn"
+                    Clicked="Productstbtn_Clicked"/>
             <Button Text="Documents" Style="{StaticResource PageButton}"/>
-            <Button Text="Log Out" Style="{StaticResource PageButton}"/>
+            <Button Text="Log Out"
+                    Style="{StaticResource PageButton}"
+                    x:Name="LogOutbtn"
+                    Clicked="LogOutbtn_Clicked"/>
         </VerticalStackLayout>
 
         <BoxView
@@ -75,93 +85,39 @@
 
             </HorizontalStackLayout>
 
-            <Label FontSize="30"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start"
-                   Margin="20, 0, 0 ,20"
-                   >Products</Label>
-
-            <FlexLayout  Padding="20, 0" JustifyContent="SpaceBetween">
+            <FlexLayout JustifyContent="SpaceBetween" Padding="20, 0">
+                <Label FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       >Dashboard</Label>
 
                 <Border Stroke="Black"
                         StrokeThickness="2"
-                        StrokeShape="RoundRectangle 6"
-                        WidthRequest="450"
-                        >
-                    <Entry Placeholder="Eg: Product Barcode: 77422101"
+                        StrokeShape="RoundRectangle 6">
+                    <Entry Placeholder="Search"
+                           HorizontalOptions="End"
+                           WidthRequest="300"
                            HorizontalTextAlignment="Center"
                            />
                 </Border>
-
-                <Border Stroke="Black"
-                        StrokeThickness="2"
-                        StrokeShape="RoundRectangle 6"
-                        WidthRequest="150"
-                        >
-                    <FlexLayout HorizontalOptions="Fill">
-                        <Label HorizontalOptions="Start">
-                            4
-                        </Label>
-
-                        <Stepper Maximum="360"
-                                 Increment="1"
-                                 BackgroundColor="Black"
-                                 
-                                 HorizontalOptions="End"/>
-                    </FlexLayout>
-
-
-                </Border>
-
-                <Border Stroke="Black"
-                        StrokeThickness="2"
-                        StrokeShape="RoundRectangle 6"
-                        WidthRequest="350"
-                        >
-                    <Entry Placeholder="Eg: Category"
-                           HorizontalTextAlignment="Center"
-                           />
-                </Border>
-
-                <Button Text="Add Products" BackgroundColor="White"
-                        Padding="10"
-                        BorderColor="#333333"
-                        BorderWidth="2"/>
             </FlexLayout>
 
-            <Border Stroke="Black"
-                    StrokeThickness="2"
-                    StrokeShape="RoundRectangle 6"
-                    HorizontalOptions="Fill"
-                    Margin="20, 20, 20, 0"
-                    Padding="3"
-                    >
-                <FlexLayout HorizontalOptions="Fill">
-                    <Image Source="searchicon.png"
-                           HorizontalOptions="Start"
-                           />
-
-                    <Entry Placeholder="Search Products"
-                               HorizontalOptions="Center"/>
-                </FlexLayout>
-
-            </Border>
-
-            <Grid RowDefinitions="70*, 30*"
+            <Grid ColumnDefinitions="40*, 60*" RowDefinitions="60*, 40*"
                   RowSpacing="20" ColumnSpacing="20"
                   Padding="20"
-                  MinimumHeightRequest="435"
-                  >
-
-                <Border Grid.Row="0" HorizontalOptions="Fill"  Padding="20">
+                  MinimumHeightRequest="560">
+                <Border Grid.Column="0" Grid.Row="0" HorizontalOptions="Fill"  Padding="20">
                     <Label HorizontalOptions="Start" VerticalOptions="Start"
-                           >Latest Products</Label>
+                           >Analytics</Label>
                 </Border>
 
-                <Border Grid.Row="1" HorizontalOptions="Fill" Padding="20">
-                    <Label HorizontalOptions="Start" VerticalOptions="Start">Low Stock Products</Label>
+                <Border Grid.Column="1" Grid.Row="0" HorizontalOptions="Fill" Padding="20">
+                    <Label HorizontalOptions="Start" VerticalOptions="Start">Stock Info</Label>
                 </Border>
 
+                <Border Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Fill" Padding="20">
+                    <Label HorizontalOptions="Start" VerticalOptions="Start">Newly Added</Label>
+                </Border>
             </Grid>
 
         </VerticalStackLayout>

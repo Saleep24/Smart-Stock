@@ -1,5 +1,4 @@
-namespace SmartStock.Views;
-
+namespace SmartStock.Project.Views;
 public partial class ForgotPasswordPage : ContentPage
 {
 	public ForgotPasswordPage()
