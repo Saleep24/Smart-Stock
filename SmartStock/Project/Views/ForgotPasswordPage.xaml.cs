@@ -1,7 +1,7 @@
 namespace SmartStock.Project.Views;
-public partial class RegisterPage : ContentPage
+public partial class ForgotPasswordPage : ContentPage
 {
-	public RegisterPage()
+	public ForgotPasswordPage()
 	{
 		InitializeComponent();
 	}

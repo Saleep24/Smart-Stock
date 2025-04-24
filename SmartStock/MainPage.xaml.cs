@@ -1,10 +1,11 @@
-﻿namespace SmartStock;
-
-public partial class MainPage : ContentPage
+﻿namespace SmartStock
 {
-		public MainPage()
-	{
-		InitializeComponent();
-	}	
-}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
 
+}
